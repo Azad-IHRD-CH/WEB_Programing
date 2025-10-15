@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript</title>
+	<style>
+		#imgbulb{
+			width : 300px;
+			height:400px;
+		}
+		
+		body{
+			width : 100%;
+			height:100vh;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			flex-direction:column
+		}
+	</style>
+</head>
+<body>
+<h1>BULB</h1>
+
+<img id="imgbulb" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHIZ9AxmcwwWXap5Y7nuzjKuknB28yQhMl57pnfdXM_aYMZOK92GHo-JwFdOAQeXXxDKw&usqp=CAU" alt="BULB">
+
+<div>
+	<button id="bon">ON</button>
+<button id="boff">OFF</button>
+</div>
+<script>
+	document.getElementById("bon").addEventListener('click',function()
+	{
+	
+		document.getElementById("imgbulb").src = "https://img.freepik.com/free-vector/realistic-lit-light-bulb-isolated_1284-41774.jpg?semt=ais_hybrid&w=740"
+		document.getElementById("imgbulb").style.width = "400px";
+
+	});
+	
+	document.getElementById("boff").addEventListener('click',function(){
+	
+		document.getElementById("imgbulb").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHIZ9AxmcwwWXap5Y7nuzjKuknB28yQhMl57pnfdXM_aYMZOK92GHo-JwFdOAQeXXxDKw&usqp=CAU"
+		document.getElementById("imgbulb").style.width = "300px";
+
+		
+	});
+</script>
+</body>
+</html>
